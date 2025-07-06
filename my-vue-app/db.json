@@ -2,5 +2,30 @@
   "tasks": [
     { "id": 1, "title": "Learn Zustand" },
     { "id": 2, "title": "Build a project" }
+  ],
+  "items": [
+    { "id": 1, "title": "Learn Zustand" },
+    { "id": 2, "title": "Build a project" }
+  ],
+    "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "Tech Corp",
+      "description": "Build user interfaces with React and TypeScript."
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "company": "API Solutions",
+      "description": "Work on REST APIs using Node.js and Express."
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Engineer",
+      "company": "Startup Inc.",
+      "description": "Own the frontend and backend in a fast-paced team."
+    }
   ]
+
 }
