@@ -17,6 +17,8 @@ type JobState = {
   clearSelectedJob: () => void
 }
 
+
+
 export const useJobStore = create<JobState>((set) => ({
   jobs: [],
   selectedJob: null,
@@ -32,7 +34,7 @@ export const useJobStore = create<JobState>((set) => ({
       }
       const data = await res.json()
       set({ jobs: data, loading: false })
-    } catch (error) {
+    } catch (error ) {
       set({ error: error.message, loading: false })
     }
   },
