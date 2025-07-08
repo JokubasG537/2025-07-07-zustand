@@ -1,13 +1,13 @@
+import apiFetcher from '../api/fetcher';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
+
+import type {
   UseQueryResult,
   UseMutationResult,
   UseMutationOptions,
 } from '@tanstack/react-query';
-import { apiFetcher } from '../api/fetcher';
+
 
 type QueryKeyType = readonly unknown[];
 

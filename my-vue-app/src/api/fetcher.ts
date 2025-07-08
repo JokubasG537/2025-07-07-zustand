@@ -1,6 +1,6 @@
 // import { API_CONFIG } from '../config';
 
-export async function apiFetcher<T>(
+ async function apiFetcher<T>(
   endpoint: string,
   options?: RequestInit
 ): Promise<T> {
@@ -19,3 +19,5 @@ export async function apiFetcher<T>(
 
   return response.json();
 }
+
+export default apiFetcher;
