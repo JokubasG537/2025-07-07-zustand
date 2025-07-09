@@ -22,11 +22,9 @@ export function useApiQuery<T>(
   options?: QueryOptions
 ): UseQueryResult<T> {
   const { enabled = true, params } = options || {};
-
   const url = params
     ? `${endpoint}?${new URLSearchParams(params as Record<string, string>)}`
     : endpoint;
-
   return useQuery<T>({
     queryKey: key,
     queryFn: () => apiFetcher<T>(url),
@@ -38,13 +36,9 @@ export function useApiMutation<TData, TVariables = unknown>(
   endpoint: string,
   method: 'POST' | 'PATCH' | 'PUT' | 'DELETE',
   invalidateKey?: QueryKeyType,
-  options?: Omit<
-    UseMutationOptions<TData, unknown, TVariables>,
-    'mutationFn'
-  >
+  options?: Omit<UseMutationOptions<TData, unknown, TVariables>, 'mutationFn'>
 ): UseMutationResult<TData, unknown, TVariables> {
   const queryClient = useQueryClient();
-
   return useMutation<TData, unknown, TVariables>({
     mutationFn: (data: TVariables) =>
       apiFetcher<TData>(endpoint, {

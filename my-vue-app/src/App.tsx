@@ -5,6 +5,7 @@ import NotificationPopup from './pages/NotificationPopup'
 import Shop from './pages/Shop'
 import Nav from './components/Nav'
 import JobBoard from './pages/JobBoard'
+import Form from './pages/Form'
 function App() {
 
   return (
@@ -16,7 +17,10 @@ function App() {
         <Route path="/counter" element={<Counter />} />
         <Route path="/notification" element={<NotificationPopup />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/job-board" element={<JobBoard />} />
+        <Route path="/job-board" element={<JobBoard />}/>
+        <Route path="/form" element={<Form />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+        
       </Routes>
     </>
   )
