@@ -12,11 +12,11 @@
   "items": [
     {
       "id": "1",
-      "title": "Learn Zustand"
+      "name": "555"
     },
     {
       "id": "2",
-      "title": "Build a project"
+      "name": "76767"
     },
     {
       "id": "4f5e",
@@ -32,7 +32,7 @@
     },
     {
       "id": "2d59",
-      "name": "hello"
+      "name": "bye"
     }
   ],
   "jobs": [

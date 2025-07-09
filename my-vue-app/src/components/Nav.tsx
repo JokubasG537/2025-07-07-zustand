@@ -12,6 +12,7 @@ export default function Nav () {
         <li><Link to="/shop">Shop</Link></li>
         <li><Link to="/job-board">Job Board</Link></li>
         <li><Link to="/form">Form</Link></li>
+        <li><Link to="/put-form">Put Form</Link></li>
         <span>cart items: {items.items.length}</span>
       </ul>
     </nav>

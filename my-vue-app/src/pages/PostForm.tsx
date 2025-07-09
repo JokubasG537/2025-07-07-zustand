@@ -59,7 +59,7 @@ export default function Form() {
                     placeholder=""
                     required
                 />
-                <button type="submit" disabled={createItem.isLoading}> Submit</button>
+                <button type="submit" > Submit</button>
             </div>
         </form>
     </div>
